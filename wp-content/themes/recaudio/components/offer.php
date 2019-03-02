@@ -1,9 +1,5 @@
-<div class="black position-relative py-5" >
-
-  <div class="led text-left dark position-relative">
-    <img src="<?= get_template_directory_uri() ."/img/led.png" ?>"
-      style="max-height: 200px; max-width: 50%">
-  </div>
+<div class="black position-relative pb-5" >
+  <hr style="max-width: 60%; border-color: white" class="py-5">
 
   <div id="offer" class="container pb-3">
     <h1 class="section-title pb-5">
