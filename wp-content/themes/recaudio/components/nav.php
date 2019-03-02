@@ -38,3 +38,11 @@
       </div>
     </div>
   </nav>
+
+<script>
+$('a.nav-link').on('click', function() {
+  if($(window).width() < 992) {
+    $('.navbar-toggler').click();
+  }
+});
+</script>

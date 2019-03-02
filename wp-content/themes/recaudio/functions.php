@@ -226,6 +226,20 @@ function recaudio_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'recaudio_scripts' );
 
+function my_login_logo() { ?>
+	<style type="text/css">
+			#login h1 a, .login h1 a {
+				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png);
+				height: 90px;
+				width: 90px;
+				background-size: 90px 90px;
+				background-repeat: no-repeat;
+				padding-bottom: 30px;
+			}
+	</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 /**
  * Fix skip link focus in IE11.
  *
