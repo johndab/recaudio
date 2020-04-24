@@ -1,7 +1,7 @@
-<div class="black position-relative pb-5" >
-  <hr style="max-width: 60%; border-color: white" class="py-5">
+<div id="offer" class="position-relative pb-5" >
+  <hr style="max-width: 60%; border-color: white" class="pb-4">
 
-  <div id="offer" class="container pb-3">
+  <div  class="container pb-3">
     <h1 class="section-title pb-5">
       <?php echo apply_filters( 'the_content', get_post(29)->post_title ); ?>
     </h1>
