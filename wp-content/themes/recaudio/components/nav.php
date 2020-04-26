@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-custom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="max-height: 50px" />
@@ -10,13 +10,13 @@
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="#videoOffer" v-smooth-scroll >Realizacja video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#soundOffer" v-smooth-scroll >Realizacja dźwięku i oświetlenia</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#about" v-smooth-scroll >O nas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#offer" v-smooth-scroll >Oferta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#realizations" v-smooth-scroll >Nasze realizacje</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#opinions" v-smooth-scroll >Opinie</a>

@@ -1,4 +1,5 @@
 <div class="dark" >
+  <hr style="max-width: 60%; border-color: white" class="pb-5 mt-5">
   <div id="about" class="container py-3" >
     <h1 class="section-title">
       <?php echo apply_filters( 'the_content', get_post(24)->post_title ); ?>
