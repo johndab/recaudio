@@ -1,13 +1,9 @@
 <div id="videoOffer">
-<h1 class="section-title">Oferta video</h1>
-<div class="container d-flex justify-content-center flex-wrap">
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
-    <img src="<?= get_template_directory_uri() ."/img/logo.png" ?>" style="width: 40%; max-width: 250px; margin: 10px" />
+    <h1 class="section-title pb-5">
+        <?php echo apply_filters( 'the_content', get_post(387)->post_title ); ?>
+    </h1>
+    <div class="row text-left mx-0 sm-gallery" >
+        <?php echo apply_filters( 'the_content', get_post(387)->post_content ); ?>
+    </div>
 </div>
-<!-- <p>1 Transmisje online koncertow</p> -->
-</div>
+

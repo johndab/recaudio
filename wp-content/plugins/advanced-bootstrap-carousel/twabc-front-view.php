@@ -59,13 +59,14 @@ function twabc_frontend($atts){
 		ob_start();
 		?>
 		<div id="twabc_<?php echo $id; ?>" class="carousel slide <?php if($atts['effect'] === 'fade') {echo "carousel-fade"; } else if($atts['effect'] === 'vslide') {echo "vertical-slider"; } ?> <?php if($atts['showindicator'] === 'numbered') {echo "carousel-indicator-numbered"; } ?>" <?php if($atts['use_javascript_animation'] == '0'){ echo ' data-ride="carousel"'; } ?> data-interval="<?php echo $atts['interval']; ?>">
+
+		<?php 
 			
-			<?php 
 			if($atts['twbs'] == '3'){ 
-				require_once('twabc-front-view-3.php');
+				require('twabc-front-view-3.php');
 			}
 			else if($atts['twbs'] == '4'){ 
-				require_once('twabc-front-view-4.php');
+				require('twabc-front-view-4.php');
 			}
 			?>
 

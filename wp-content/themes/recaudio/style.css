@@ -3,7 +3,7 @@ body {
 }
 
 #app {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Spartan', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -50,6 +50,7 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.1rem;
+  transition: transform 300ms;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link i {
@@ -57,17 +58,91 @@ body {
   font-size: 25px;
 }
 
-.carousel {
-  text-shadow: 0px 0px 2px #000;
-  max-height: 700px;
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+  transform: translateY(-2px);
+}
+
+.carousel-wrapper {
+  height: 100%;
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .carousel-wrapper {
+    height: 50%;
+  }
+}
+
+.carousel-overlay {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  padding: 10px; 
+  z-index: 2; 
+  color: white !important;
+  text-shadow: 0 0 5px rgba(61,61,61,.6);
+  background-color: rgba(61,61,61,.2);
+  transition: background-color 500ms;
+}
+
+.carousel-overlay h1 {
+  transition: transform 500ms;
+}
+
+.carousel-overlay:hover {
+  background-color: rgba(61,61,61,.4);
+  text-decoration: none;
+}
+.carousel-overlay:hover h1 {
+  transform: translateY(-10px)
+}
+
+
+.carousel {
+  text-shadow: 0px 0px 2px #000;
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel .carousel-inner,
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner img {
+  min-height: 100%;
+  height: 100%;
+}
+
 .carousel img {
-  max-width: 100%;
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sm-gallery .rl-gallery-item {
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.rl-basicgrid-gallery {
+  justify-content: center;
+  align-content: center;
+}
+
+.rl-basicgrid-gallery:after {
+  flex-grow: unset !important;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.sm-gallery .rl-gallery-item img {
+  width: 250px;
   height: auto;
-  min-height: 400px;
-  min-width: 711px; /* (n / 9) * 16 */
 }
 
 .profile-img {

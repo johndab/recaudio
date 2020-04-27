@@ -16,7 +16,7 @@
             <a class="nav-link" href="#soundOffer" v-smooth-scroll >Realizacja dźwięku i oświetlenia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" v-smooth-scroll >O nas</a>
+            <a class="nav-link text-nowrap" href="#about" v-smooth-scroll >O nas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#opinions" v-smooth-scroll >Opinie</a>
