@@ -10,10 +10,14 @@
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#videoOffer" v-smooth-scroll >Realizacja video</a>
+            <a class="nav-link" href="#videoOffer" v-smooth-scroll >
+              <?php echo apply_filters( 'the_content', get_post(463)->post_title); ?>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#soundOffer" v-smooth-scroll >Realizacja dźwięku i oświetlenia</a>
+            <a class="nav-link" href="#soundOffer" v-smooth-scroll >
+            <?php echo apply_filters( 'the_content', get_post(466)->post_title ); ?>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-nowrap" href="#about" v-smooth-scroll >O nas</a>

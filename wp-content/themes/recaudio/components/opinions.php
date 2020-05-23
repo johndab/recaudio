@@ -3,9 +3,10 @@
   
   <div class="container py-3" >
     <h1 class="section-title">
-      Zaufali nam
+      <?php echo apply_filters( 'the_content', get_post(461)->post_title ); ?>
     </h1>
-    <!-- slider z klientami -->
+
+    <?php echo do_shortcode('[rl_gallery id="468"] '); ?>
   </div>
 
   <div class="container py-3" >

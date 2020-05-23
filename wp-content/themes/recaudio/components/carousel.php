@@ -25,7 +25,7 @@
                 href="#soundOffer" 
                 class="d-flex align-items-center justify-content-center carousel-overlay"
             >
-                <h1 class="section-title">Realizacja oświetlenia, nagłośnienia i nagrań</h1>
+                <h1 class="section-title">Technika estradowa i nagrania</h1>
             </a>
         </div>
     </div>

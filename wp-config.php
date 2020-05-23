@@ -18,9 +18,12 @@
  * @package WordPress
  */
 
+define( 'WP_HOME', 'http://janik' );
+define( 'WP_SITEURL', 'http://janik' );
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'janik');
 
 /** MySQL database username */
 define('DB_USER', 'root');

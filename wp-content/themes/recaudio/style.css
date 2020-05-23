@@ -127,6 +127,10 @@ body {
   margin: 0 !important;
 }
 
+.sm-gallery {
+  justify-content: center;
+}
+
 .rl-basicgrid-gallery {
   justify-content: center;
   align-content: center;
